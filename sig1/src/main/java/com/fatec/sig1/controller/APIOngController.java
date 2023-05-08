@@ -60,7 +60,7 @@ public class APIOngController {
 		
 		if (ongDTO.getCep() != null) {
 			Optional<Endereco> endereco = Optional.ofNullable(mantemOng.obtemEndereco(ongDTO.getCep()));
-
+			
 			logger.info(">>>>>> apicontroller obtem endereco => " + ongDTO.getCep());
 
 			if (endereco.isEmpty()) {

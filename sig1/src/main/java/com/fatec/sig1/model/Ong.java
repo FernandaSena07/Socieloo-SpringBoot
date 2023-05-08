@@ -42,6 +42,8 @@ public class Ong {
 	
 	@NotBlank(message = "O complemento deve ser informado")
 	private String complemento;
+	
+    @Column(columnDefinition = "Longtext")
 	private String descricao;
 	private String segmento;
 	
@@ -59,7 +61,7 @@ public class Ong {
 	private String agencia;
 	private String pix;
 	private String Cpf;
-	
+	private String bairro;
 	
 	
 	public Ong(String nome, long telefone, String cep, String complemento, 
@@ -227,6 +229,14 @@ public class Ong {
 
 	public void setRegiao(String regiao) {
 		this.regiao = regiao;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
 	
 	
