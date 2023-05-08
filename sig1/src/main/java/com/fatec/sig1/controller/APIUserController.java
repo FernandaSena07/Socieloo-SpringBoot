@@ -29,7 +29,7 @@ import com.fatec.sig1.model.UserDTO;
 import com.fatec.sig1.services.MantemUser;
 
 @RestController
-@RequestMapping("/api/v1/ong")
+@RequestMapping("/api/v1/user")
 
 public class APIUserController {
 

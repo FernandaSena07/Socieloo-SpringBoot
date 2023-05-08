@@ -1,6 +1,7 @@
 package com.fatec.sig1.services;
 
 import java.util.List;
+
 import java.util.Optional;
 
 import com.fatec.sig1.model.User;
@@ -14,9 +15,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
-
 import com.fatec.sig1.model.MantemUserRepository;
 
+@Service
 public class MantemUserI implements MantemUser {
 
 	Logger logger = LogManager.getLogger(this.getClass());
